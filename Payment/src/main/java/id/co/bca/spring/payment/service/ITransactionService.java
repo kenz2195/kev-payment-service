@@ -2,8 +2,11 @@ package id.co.bca.spring.payment.service;
 
 import id.co.bca.spring.payment.model.TransactionModel;
 
+import java.util.List;
+
 public interface ITransactionService {
-    void insert(TransactionModel transaction);
-    void update(TransactionModel transaction);
-    TransactionModel findTheTransaction(TransactionModel transaction);
+    TransactionModel insert(TransactionModel transaction);
+    TransactionModel update(TransactionModel transaction);
+    TransactionModel delete(TransactionModel transaction);
+    List<TransactionModel> findAllByCustomerId(int customerId);
 }

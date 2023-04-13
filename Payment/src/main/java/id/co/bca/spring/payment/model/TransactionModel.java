@@ -1,7 +1,6 @@
 package id.co.bca.spring.payment.model;
 
 import jakarta.persistence.*;
-import java.sql.*;
 
 @Entity
 @Table(name="transaction")

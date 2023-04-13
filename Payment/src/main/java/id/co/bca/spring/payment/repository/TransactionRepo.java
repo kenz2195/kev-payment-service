@@ -6,6 +6,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface TransactionRepo extends JpaRepository<TransactionModel, Integer> {
-    TransactionModel findTransactionByCustId(Integer aInteger);
+    List<TransactionModel> findAllByCustomerId(Integer aInteger);
     List<TransactionModel> findAllByOrderByCustomerId();
 }
